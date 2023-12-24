@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(100, 204, 197);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(0, 28, 48);
+  /* text-shadow: 1px 1px 2px rgb(0, 0, 0); */
+  margin-bottom: 15px;
+  font-size: 45px;
+}
+
+#slider {
+  width: 850px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px rgb(54, 52, 52);
+}
+
+#slider img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#slider .active {
+  display: block;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 350px;
+  color: rgb(238, 230, 230);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  background-color: rgba(228, 217, 230, 0.4);
+  transition: all 0.5s;
+}
+
+#prev {
+  left: 275px;
+}
+
+#next {
+  right: 275px;
+}
+.fa-solid {
+  font-size: larger;
+}
+
+#prev:hover,
+#next:hover {
+  opacity: 1;
+  background-color: rgba(228, 217, 230, 1);
+  color: rgb(0, 28, 48);
+  cursor: pointer;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin-bottom: 20px;
+  margin-right: 3px;
+  background-color: #dafffb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s;
+}
+
+.dot:hover {
+  background-color: rgb(99, 110, 116);
+}
+
+.dots-container .activeDot {
+  background-color: #176b87;
+}
+
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

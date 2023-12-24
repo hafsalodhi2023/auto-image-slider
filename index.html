@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <h1 class="heading">Automatic Image Slider</h1>
+      <div id="slider">
+        <img src="images/1.jpg" class="slides fade active" />
+        <img src="images/2.jpeg" class="slides fade" />
+        <img src="images/3.jpg" class="slides fade" />
+        <img src="images/4.jpg" class="slides fade" />
+        <img src="images/5.jpg" class="slides fade" />
+        <img src="images/6.png" class="slides fade" />
+        <img src="images/7.png" class="slides fade" />
+        <div id="prev">
+          <i class="fa-solid fa-backward"></i>
+        </div>
+        <div id="next">
+          <i class="fa-solid fa-forward"></i>
+        </div>
+      </div>
+      <div class="dots-container">
+        <div class="dot activeDot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
